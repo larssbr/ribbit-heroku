@@ -25,8 +25,8 @@ DATABASES = {
         'NAME':'ribbit', #os.path.join(PROJECT_PATH, 'database.db'),                      # Or path to database file if using sqlite3.
         'USER': 'username',                      # Not used with sqlite3.
         'PASSWORD': 'password',                  # Not used with sqlite3.
-        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+        'HOST': '127.0.0.1',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '5000',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
 
