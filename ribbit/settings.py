@@ -23,16 +23,16 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME':'test', #os.path.join(PROJECT_PATH, 'database.db'),                      # Or path to database file if using sqlite3.
-        'USER': 'postgres',                      # Not used with sqlite3.
-        'PASSWORD': '123',                  # Not used with sqlite3.
-        'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
+        'USER': 'vpqtxpjzdlfbce',                      # Not used with sqlite3.
+        'PASSWORD': 'xAK_QJN_uE3j58kV5dM9oGs685',                  # Not used with sqlite3.
+        'HOST':  'ec2-54-197-241-67.compute-1.amazonaws.com', #'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '5432',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
 
 import dj_database_url 
-DATABASES['default'] = dj_database_url.config()  # postgres://USER:PASSWORD@HOST:PORT/NAME
-#DATABASES['default'] =  dj_database_url.config(default="postgres://postgres:123@localhost:5432/test") # must be after the big "DATABASES"
+#DATABASES['default'] = dj_database_url.config()  # postgres://USER:PASSWORD@HOST:PORT/NAME
+DATABASES['default'] =  dj_database_url.config(default="postgres://vpqtxpjzdlfbce:xAK_QJN_uE3j58kV5dM9oGs685@ec2-54-197-241-67.compute-1.amazonaws.com:5432/def2frn2824f9i") # must be after the big "DATABASES"
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
