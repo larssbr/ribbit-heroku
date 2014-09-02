@@ -31,8 +31,8 @@ DATABASES = {
 }
 
 import dj_database_url 
-#DATABASES['default'] = dj_database_url.config()  # postgres://USER:PASSWORD@HOST:PORT/NAME
-DATABASES['default'] =  dj_database_url.config(default="postgres://postgres:123@localhost:5432/test") # must be after the big "DATABASES"
+DATABASES['default'] = dj_database_url.config()  # postgres://USER:PASSWORD@HOST:PORT/NAME
+#DATABASES['default'] =  dj_database_url.config(default="postgres://postgres:123@localhost:5432/test") # must be after the big "DATABASES"
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
