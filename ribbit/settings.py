@@ -32,7 +32,7 @@ DATABASES = {
 
 import dj_database_url 
 #DATABASES['default'] = dj_database_url.config()  # postgres://USER:PASSWORD@HOST:PORT/NAME
-DATABASES['default'] =  dj_database_url.config(default="postgres://vpqtxpjzdlfbce:xAK_QJN_uE3j58kV5dM9oGs685@ec2-54-197-241-67.compute-1.amazonaws.com:5432/def2frn2824f9i") # must be after the big "DATABASES"
+DATABASES['default'] =  dj_database_url.config(default='postgres://vpqtxpjzdlfbce:xAK_QJN_uE3j58kV5dM9oGs685@ec2-54-197-241-67.compute-1.amazonaws.com:5432/def2frn2824f9i') # must be after the big "DATABASES"
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
