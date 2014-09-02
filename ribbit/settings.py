@@ -2,7 +2,7 @@ import os
 
 # Django settings for ribbit project.
 
-import dj_database_url 
+
 
 
 DEBUG = True
@@ -30,6 +30,7 @@ DATABASES = {
     }
 }
 
+import dj_database_url 
 #DATABASES['default'] = dj_database_url.config()  # postgres://USER:PASSWORD@HOST:PORT/NAME
 DATABASES['default'] =  dj_database_url.config(default="postgres://postgres:123@localhost:5432/test") # must be after the big "DATABASES"
 
